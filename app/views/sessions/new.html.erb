@@ -1,0 +1,14 @@
+<div class="container" >
+	<h1 class="form-signin-heading" >Log in</h1>
+	<%= form_tag sessions_path, class: "form-signin" do  %>
+		<%= text_field_tag :email, params[:email], class: "form-control", autofocus: "", required: "", placeholder: "Email address" %>
+		<%= password_field_tag :password, nil, class: "form-control", required: "", placeholder: "Password" %></br>
+		<p class="button"><%= submit_tag "Log in", class: "btn btn-lg btn-primary btn-block" %></p>
+	<% end %>
+	<%= link_to "Register", "/sign_up" %>
+	<% if defined?(@error) %>
+	 	<div class="error">
+			<%= "*" + @error %> 
+		</div>
+	<% end %>
+</div>

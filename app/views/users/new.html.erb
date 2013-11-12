@@ -1,0 +1,20 @@
+<div class="container" >
+    <h1 class="form-signin-heading" >Sign Up</h1>
+
+    <%= form_for @user do |f| %>
+        <% if @user.errors.any? %>
+            <div class="error_messages">
+                <h2>Form is invalid</h2>
+                <ul>
+                    <% for message in @user.errors.full_messages %>
+                        <li><%= message %></li>
+                    <% end %>
+                </ul>
+            </div>
+        <% end %>
+        <%= f.text_field :email, class: "form-control", autofocus: "", required: "", placeholder: "Email address" %>
+        <%= f.password_field :password, class: "form-control", required: "", placeholder: "Password" %>
+        <%= f.password_field :password_confirmation, class: "form-control", required: "", placeholder: "Confirm Password" %><br/>
+        <p class="button"><%= submit_tag "Register", class: "btn btn-lg btn-primary btn-block" %></p>
+    <% end %>
+</div>
