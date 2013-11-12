@@ -11,5 +11,7 @@ This Web Application is free and was possible because of the following people:
 
 * 	mccabec - Conner McCabe
 
-*	Sharrang
+*	ShaRang Shandil
+
+
 <tt>rake doc:app</tt>.
