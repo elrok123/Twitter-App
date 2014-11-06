@@ -15,3 +15,5 @@ This Web Application is free and was possible because of the following people:
 
 
 <tt>rake doc:app</tt>.
+
+This project was conducted at Heriot-Watt University in 2014, feel free to borrow code as you wish as it is purely for educational purposes.
